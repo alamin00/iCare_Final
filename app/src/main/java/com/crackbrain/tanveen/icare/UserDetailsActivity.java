@@ -62,7 +62,7 @@ public class UserDetailsActivity extends ActionBarActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_employees_details,menu);
+        getMenuInflater().inflate(R.menu.menu_user_details,menu);
         return true;
     }
 

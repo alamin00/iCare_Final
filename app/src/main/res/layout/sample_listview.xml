@@ -9,7 +9,7 @@
         android:layout_gravity="center"
         android:text="Employee Name"
         android:padding="5dp"
-        android:drawableLeft="@drawable/ic_action_face_unlock"
+        android:drawableLeft="@drawable/person_row"
         android:drawablePadding="10dp"
         android:gravity="center_vertical"
         android:textColor="#ffffcf2c"
