@@ -86,7 +86,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Name: "
+                android:text="Age: "
                 android:textColor="#000"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -96,7 +96,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="Name"
+                android:text="Age"
                 android:textSize="16sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -133,9 +133,9 @@
             android:padding="10dp">
 
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+
                 android:text="Blood Group: "
                 android:textColor="#000"
                 android:textSize="16sp"
@@ -146,6 +146,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
+                android:layout_marginLeft="10dp"
                 android:text="Blood Group"
                 android:textSize="16sp"
                 android:textStyle="bold" />
