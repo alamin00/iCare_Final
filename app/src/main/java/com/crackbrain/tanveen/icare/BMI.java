@@ -1,9 +1,8 @@
 package com.crackbrain.tanveen.icare;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,6 +14,9 @@ public class BMI extends ActionBarActivity {
     TextView tvResult;
     EditText etheight,etweight;
     Button cal;
+
+    private float fHeight;
+    private float fWeight;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,28 +30,25 @@ public class BMI extends ActionBarActivity {
         String sHeight=etheight.getText().toString().trim();
         String sWeight=etweight.getText().toString().trim();
 
-        final float fHeight=Float.parseFloat(sHeight);
-        final float fWeight=Float.parseFloat(sWeight);
+        fHeight = Float.parseFloat(sHeight);
+        fWeight = Float.parseFloat(sWeight);
 
         cal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                float result=(fWeight/(fHeight*fHeight)*703);
-                if(result<18.5){
+                float result = (fWeight / (fHeight * fHeight) * 703);
+                if (result < 18.5) {
                     tvResult.setText("You'r too sick. Need more Nutrition Food");
-                }
-                else if(18.5<=result && result<=24.9){
+                } else if (18.5 <= result && result <= 24.9) {
                     tvResult.setText("You have Normal weight");
-                }
-                else if (25<=result && result<=29.99){
+                } else if (25 <= result && result <= 29.99) {
                     tvResult.setText("You'r Over weight need to control Diet");
-                }
-                else {
+                } else {
                     tvResult.setText("You'r too fat. Get hurry to control your weight");
                 }
             }
         });
-        etCLR();
+
     }
 
     @Override
