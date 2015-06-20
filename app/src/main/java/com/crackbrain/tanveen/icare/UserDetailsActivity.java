@@ -12,16 +12,15 @@ import java.util.ArrayList;
 
 public class UserDetailsActivity extends ActionBarActivity {
 
+    static int empId;
+    ArrayList<User> userArrayList;
+    DBAdapter dbAdapter;
     private TextView tvName;
     private TextView tvEmail;
     private TextView tvTitle;
     private TextView tvAddress;
     private TextView tvCity;
     private TextView tvCountry;
-
-    ArrayList<User> userArrayList;
-    DBAdapter dbAdapter;
-    static int empId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,6 +76,9 @@ public class UserDetailsActivity extends ActionBarActivity {
             takeUserToRegistrationForm.putExtra("id",empId);
             startActivity(takeUserToRegistrationForm);
             finish();
+        } else if (id == R.id.action_BMI) {
+            Intent i = new Intent(UserDetailsActivity.this, BMI.class);
+            startActivity(i);
         }
 
         return super.onOptionsItemSelected(item);
