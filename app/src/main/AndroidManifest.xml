@@ -7,8 +7,9 @@
         android:icon="@mipmap/icon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+
         <activity
-            android:name=".MainActivity"
+            android:name=".Splash"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,19 +17,29 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.crackbrain.tanveen.icare.MainActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".UserDetailsActivity"
             android:label="User Information" />
         <activity
             android:name=".UserRegistrationActivity"
             android:label="Registration" />
-        <activity
-            android:name=".SplashScreen"
-            android:label="Crack Brain" />
+
         <activity
             android:name=".BMI"
             android:label="@string/title_activity_bmi" >
         </activity>
+
     </application>
 
 </manifest>
