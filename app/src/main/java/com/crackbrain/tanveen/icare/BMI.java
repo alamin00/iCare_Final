@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class BMI extends ActionBarActivity {
@@ -26,16 +27,18 @@ public class BMI extends ActionBarActivity {
         etweight=(EditText)findViewById(R.id.etWeight);
         cal=(Button)findViewById(R.id.btnCal);
 
-        String sHeight=etheight.getText().toString().trim();
-        String sWeight=etweight.getText().toString().trim();
+        /*final String sHeight=etheight.getText().toString().trim();
+        final String sWeight=etweight.getText().toString().trim();*/
 
-        final float fHeight=Float.parseFloat(sHeight);
-        final float fWeight=Float.parseFloat(sWeight);
+
 
         cal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                 float fHeight=Float.valueOf(etheight.getText().toString());
+                 float fWeight=Float.valueOf(etweight.getText().toString());
                 float result=(fWeight/(fHeight*fHeight)*703);
+
                 if(result<18.5){
                     tvResult.setText("You'r too sick. Need more Nutrition Food");
                 }
