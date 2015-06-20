@@ -16,15 +16,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-    <activity android:name=".UserDetailsActivity"
-        android:label="User Information"/>
-        <activity android:name=".UserRegistrationActivity"
-            android:label="Registration"/>
-        <activity android:name=".SplashScreen"
-            android:label="Crack Brain"/>
-
-
+        <activity
+            android:name=".UserDetailsActivity"
+            android:label="User Information" />
+        <activity
+            android:name=".UserRegistrationActivity"
+            android:label="Registration" />
+        <activity
+            android:name=".SplashScreen"
+            android:label="Crack Brain" />
+        <activity
+            android:name=".BMI"
+            android:label="@string/title_activity_bmi" >
+        </activity>
     </application>
 
 </manifest>
