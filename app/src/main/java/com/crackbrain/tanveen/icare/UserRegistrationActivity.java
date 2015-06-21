@@ -95,7 +95,7 @@ public class UserRegistrationActivity extends ActionBarActivity {
                                 User user =new User(name,title,email,address,city,country);
                                 long inserted=dbAdapter.addEmployee(user);
                                 if(inserted>=0){
-                                    Toast.makeText(getApplicationContext(), "Data Saved On Database Successfully!", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "Profile Created", Toast.LENGTH_SHORT).show();
                                 }
                                 Intent gotoMainActivity=new Intent(UserRegistrationActivity.this,MainActivity.class);
                                 startActivity(gotoMainActivity);
@@ -106,7 +106,7 @@ public class UserRegistrationActivity extends ActionBarActivity {
                                 User user =new User(name,title,email,address,city,country);
                                 long updated=dbAdapter.updateEmployee(user,empId);
                                 if(updated>=0){
-                                    Toast.makeText(getApplicationContext(), "Data Updated Successfully!!", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "Profile Update Successfully !!", Toast.LENGTH_SHORT).show();
                                 }
                                 Intent gotoEmployeeDetailsActivity=new Intent(UserRegistrationActivity.this,UserDetailsActivity.class);
                                 gotoEmployeeDetailsActivity.putExtra("id",empId);

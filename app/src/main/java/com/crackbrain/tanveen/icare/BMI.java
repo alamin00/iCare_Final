@@ -1,15 +1,12 @@
 package com.crackbrain.tanveen.icare;
 
-import android.app.Activity;
-import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 public class BMI extends ActionBarActivity {
@@ -37,6 +34,7 @@ public class BMI extends ActionBarActivity {
             public void onClick(View v) {
                  float fHeight=Float.valueOf(etheight.getText().toString());
                  float fWeight=Float.valueOf(etweight.getText().toString());
+
                 float result=(fWeight/(fHeight*fHeight)*703);
 
                 if(result<18.5){

@@ -17,10 +17,10 @@ public class UserDetailsActivity extends ActionBarActivity {
     DBAdapter dbAdapter;
     private TextView tvName;
     private TextView tvEmail;
-    private TextView tvTitle;
+    private TextView tvAge;
     private TextView tvAddress;
     private TextView tvCity;
-    private TextView tvCountry;
+    private TextView tvPhone;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -40,10 +40,10 @@ public class UserDetailsActivity extends ActionBarActivity {
         for(User user : userArrayList){
             tvName.setText(user.getName());
             tvEmail.setText(user.getEmail());
-            tvTitle.setText(user.getTitle());
+            tvAge.setText(user.getTitle());
             tvAddress.setText(user.getAddress());
             tvCity.setText(user.getCity());
-            tvCountry.setText(user.getCountry());
+            tvPhone.setText(user.getCountry());
         }
     }
 
@@ -52,8 +52,8 @@ public class UserDetailsActivity extends ActionBarActivity {
         tvEmail= (TextView) findViewById(R.id.tvEmailInDetails);
         tvAddress= (TextView) findViewById(R.id.tvAddressInDetails);
         tvCity= (TextView) findViewById(R.id.tvCityInDetails);
-        tvTitle= (TextView) findViewById(R.id.tvTitleInDetails);
-        tvCountry= (TextView) findViewById(R.id.tvCountryInDetails);
+        tvAge = (TextView) findViewById(R.id.tvTitleInDetails);
+        tvPhone = (TextView) findViewById(R.id.tvCountryInDetails);
 
         userArrayList =new ArrayList<User>();
         dbAdapter=new DBAdapter(this);
@@ -79,6 +79,10 @@ public class UserDetailsActivity extends ActionBarActivity {
             finish();
         } else if (id == R.id.action_BMI) {
             Intent i = new Intent(UserDetailsActivity.this, BMI.class);
+            startActivity(i);
+        }
+        else if(id==R.id.action_Diet){
+            Intent i = new Intent(UserDetailsActivity.this, DietActivity.class);
             startActivity(i);
         }
 
