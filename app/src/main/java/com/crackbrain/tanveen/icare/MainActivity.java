@@ -11,6 +11,9 @@ import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.crackbrain.tanveen.icare.alarm.AlarmActivity;
+import com.crackbrain.tanveen.icare.alarm.BaseActivity;
+
 import java.util.ArrayList;
 
 
@@ -115,6 +118,11 @@ public class MainActivity extends ActionBarActivity {
             gotoEmployeeRegistrationForm.putExtra("from", "mainActivity");
             startActivity(gotoEmployeeRegistrationForm);
             finish();
+        }
+        else if (id == R.id.alarm){
+            Intent gotoalarm = new Intent(MainActivity.this , AlarmActivity.class);
+            startActivity(gotoalarm);
+
         }
 
 
