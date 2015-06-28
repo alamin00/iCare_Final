@@ -77,13 +77,6 @@ public class UserDetailsActivity extends ActionBarActivity {
             takeUserToRegistrationForm.putExtra("id",empId);
             startActivity(takeUserToRegistrationForm);
             finish();
-        } else if (id == R.id.action_BMI) {
-            Intent i = new Intent(UserDetailsActivity.this, BMI.class);
-            startActivity(i);
-        }
-        else if(id==R.id.action_Diet){
-            Intent i = new Intent(UserDetailsActivity.this, DietActivity.class);
-            startActivity(i);
         }
 
         return super.onOptionsItemSelected(item);

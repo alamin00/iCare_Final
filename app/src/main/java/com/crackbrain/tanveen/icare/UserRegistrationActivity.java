@@ -97,7 +97,7 @@ public class UserRegistrationActivity extends ActionBarActivity {
                                 if(inserted>=0){
                                     Toast.makeText(getApplicationContext(), "Profile Created", Toast.LENGTH_SHORT).show();
                                 }
-                                Intent gotoMainActivity=new Intent(UserRegistrationActivity.this,MainActivity.class);
+                                Intent gotoMainActivity=new Intent(UserRegistrationActivity.this,AllUserList.class);
                                 startActivity(gotoMainActivity);
                                 finish();
 

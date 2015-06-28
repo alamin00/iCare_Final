@@ -14,13 +14,17 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/icon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.crackbrain.tanveen.icare.Splash"
+            android:name=".Splash"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,7 +33,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crackbrain.tanveen.icare.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="com.crackbrain.tanveen.icare.MainActivity" />
@@ -38,46 +42,49 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.crackbrain.tanveen.icare.UserDetailsActivity"
+            android:name=".UserDetailsActivity"
             android:label="User Information" />
         <activity
-            android:name="com.crackbrain.tanveen.icare.UserRegistrationActivity"
+            android:name=".UserRegistrationActivity"
             android:label="Registration" />
         <activity
-            android:name="com.crackbrain.tanveen.icare.BMI"
+            android:name=".BMI"
             android:label="@string/title_activity_bmi" >
         </activity>
         <activity
-            android:name="com.crackbrain.tanveen.icare.DietActivity"
+            android:name=".DietActivity"
             android:label="@string/title_activity_diet" >
         </activity>
-        <activity android:name=".alarm.AlarmActivity">
-
+        <activity android:name=".alarm.AlarmActivity" >
         </activity>
-        <activity android:name=".alarm.preferences.AlarmPreferencesActivity">
-
+        <activity android:name=".alarm.preferences.AlarmPreferencesActivity" >
         </activity>
-        <service android:name=".alarm.service.AlarmService"
-            android:icon="@drawable/ic_launcher"
-            ></service>
-        <receiver android:name=".alarm.service.AlarmServiceBroadcastReciever">
+
+        <service
+            android:name=".alarm.service.AlarmService"
+            android:icon="@drawable/ic_launcher" />
+
+        <receiver android:name=".alarm.service.AlarmServiceBroadcastReciever" >
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-        <activity android:name=".alarm.alert.AlarmAlertActivity">
 
-
+        <activity android:name=".alarm.alert.AlarmAlertActivity" >
         </activity>
-        <receiver android:name=".alarm.alert.AlarmAlertBroadcastReciever">
 
+        <receiver android:name=".alarm.alert.AlarmAlertBroadcastReciever" >
         </receiver>
-        <receiver android:name=".alarm.telephony.PhoneStateChangedBroadcastReciever">
+        <receiver android:name=".alarm.telephony.PhoneStateChangedBroadcastReciever" >
             <intent-filter>
-                <action android:name="android.intent.action.PHONE_STATE"></action>
+                <action android:name="android.intent.action.PHONE_STATE" />
             </intent-filter>
         </receiver>
-        
+
+        <activity
+            android:name=".AllUserList"
+            android:label="@string/title_activity_all_user_list" >
+        </activity>
     </application>
 
 </manifest>

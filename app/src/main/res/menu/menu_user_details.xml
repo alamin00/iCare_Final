@@ -9,27 +9,9 @@
         android:title="Edit"
         app:showAsAction="ifRoom"
         android:icon="@android:drawable/ic_menu_edit"/>
-    <group android:visible="true"
-        app:showAsAction="ifRoom"
-        android:icon="@drawable/sub"
-        >
 
-        <item android:id="@+id/action_mydoc"
-            android:title="My Doctor"
-            android:showAsAction="ifRoom"
-            android:orderInCategory="200"
-            />
-    <item android:id="@+id/action_BMI"
-        android:title="BMI"
-        android:showAsAction="ifRoom"
-        android:orderInCategory="300"
-        />
-    <item android:id="@+id/action_Diet"
-        android:title="Diet"
-        android:showAsAction="ifRoom"
-        android:orderInCategory="400"
-        />
-    </group>
+
+
 
     />
 </menu>
