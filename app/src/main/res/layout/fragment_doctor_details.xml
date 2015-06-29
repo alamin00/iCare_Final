@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+    <RelativeLayout
+        android:id="@+id/relative_layout_add_customer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp">
+        <EditText
+            android:id="@+id/edit_text_customer_name"
+            style="@style/AddClientForm"
+            android:hint="Doctor Name"
+            android:imeOptions="actionNext" />
+        <EditText
+            android:id="@+id/edit_text_customer_email"
+            style="@style/AddClientForm"
+            android:layout_below="@+id/edit_text_customer_name"
+            android:hint="Email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:id="@+id/edit_text_customer_phone"
+            style="@style/AddClientForm"
+            android:layout_below="@+id/edit_text_customer_email"
+            android:hint="Doctor_phone"
+            android:imeOptions="actionNext"
+            android:inputType="phone"/>
+        <EditText
+            android:id="@+id/edit_text_customer_street_address"
+            style="@style/AddClientForm"
+            android:hint="@string/hint_customer_street_address"
+            android:layout_below="@+id/edit_text_customer_phone"
+            android:imeOptions="actionNext" />
+        <EditText
+            android:id="@+id/edit_text_customer_city"
+            style="@style/AddClientForm"
+            android:layout_below="@+id/edit_text_customer_street_address"
+            android:hint="@string/hint_customer_city"
+            android:imeOptions="actionNext" />
+        <EditText
+            android:id="@+id/edit_text_customer_state"
+            style="@style/AddClientForm"
+            android:layout_below="@+id/edit_text_customer_city"
+            android:hint="Doctor_state"
+            android:imeOptions="actionNext" />
+        <EditText
+            android:id="@+id/edit_text_customer_zip_code"
+            style="@style/AddClientForm"
+            android:layout_below="@+id/edit_text_customer_state"
+            android:inputType="number"
+            android:hint="Hospital Phone"
+            android:imeOptions="actionNext" />
+        <EditText
+            android:id="@+id/etxNote"
+            android:layout_below="@+id/edit_text_customer_zip_code"
+            style="@style/AddClientForm"
+            android:gravity="top"
+            android:singleLine="false"
+            android:hint="@string/hint_customer_note"
+            android:textColor="@android:color/black"
+            android:lines="2" />
+
+        <ImageButton
+            android:id="@+id/customer_image_button"
+            android:layout_width="match_parent"
+            android:layout_below="@id/etxNote"
+            android:layout_height="150dp"
+            android:layout_marginBottom="12dp"
+            android:background="@android:color/darker_gray"
+            android:scaleType="centerCrop"
+            android:contentDescription="Profile Image" />
+    </RelativeLayout>
+
+</ScrollView>
