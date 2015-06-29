@@ -19,18 +19,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imgbtnFamily"
-            android:src="@drawable/family" />
+            android:src="@drawable/family"
+            android:layout_weight="1"/>
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imgbtnDoc"
-            android:src="@drawable/my_doc" />
+            android:src="@drawable/my_doc"
+            android:layout_weight="1"/>
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imgbtnDiet"
-            android:src="@drawable/diet" />
+            android:src="@drawable/diet"
+            android:layout_weight="1"/>
     </LinearLayout>
 
     <LinearLayout
@@ -46,18 +49,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imgbtnVaccin"
-            android:src="@drawable/vaccin" />
+            android:src="@drawable/vaccin"
+            android:layout_weight="1"/>
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imgbtnHealth"
-            android:src="@drawable/helthcare" />
+            android:src="@drawable/helthcare"
+            android:layout_weight="1"/>
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imgbtnEmargency"
-            android:src="@drawable/emargency_no" />
+            android:src="@drawable/emargency_no"
+            android:layout_weight="1"/>
     </LinearLayout>
 
     <LinearLayout
@@ -70,7 +76,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imgbtnBmi"
-            android:src="@drawable/bmi" />
+            android:src="@drawable/bmi"
+            android:layout_weight="1"/>
 
 
     </LinearLayout>
