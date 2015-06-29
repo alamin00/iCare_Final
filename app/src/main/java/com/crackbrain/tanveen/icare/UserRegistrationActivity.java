@@ -68,6 +68,7 @@ public class UserRegistrationActivity extends ActionBarActivity {
 
         btnSave= (Button) findViewById(R.id.btnSave);
         btnSave.setOnTouchListener(new View.OnTouchListener() {
+            //for touch calling
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getAction()){
