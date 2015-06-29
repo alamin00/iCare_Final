@@ -1,25 +1,19 @@
 package com.crackbrain.tanveen.icare;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.ListView;
-import android.widget.TextView;
 
 import com.crackbrain.tanveen.icare.alarm.AlarmActivity;
-import com.crackbrain.tanveen.icare.alarm.BaseActivity;
-
-import java.util.ArrayList;
 
 
 public class MainActivity extends ActionBarActivity implements View.OnClickListener {
 
     ImageButton btnUser,btnDoc,btnDiet,btnVaccin,btnMedicalList,btnEmargency,btnBmi;
+    private static final String TAG="MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +38,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         btnEmargency=(ImageButton)findViewById(R.id.imgbtnEmargency);
         btnEmargency.setOnClickListener(this);
         btnBmi=(ImageButton)findViewById(R.id.imgbtnBmi);
-        btnEmargency.setOnClickListener(this);
+        btnBmi.setOnClickListener(this);
     }
 
 
@@ -58,11 +52,13 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
             }
             case R.id.imgbtnDiet:{
                 Intent i=new Intent(MainActivity.this,AlarmActivity.class);
+                Log.d(TAG,"Diet Button Clicked");
                 startActivity(i);
                 break;
             }
             case R.id.imgbtnBmi:{
                 Intent i=new Intent(MainActivity.this,BMI.class);
+                Log.d(TAG,"Bmi Button Clicked");
                 startActivity(i);
                 break;
             }
