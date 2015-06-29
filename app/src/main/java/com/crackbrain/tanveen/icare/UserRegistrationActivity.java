@@ -10,16 +10,18 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.crackbrain.tanveen.icare.profileimagedemo.AllUserList;
+
 import java.util.ArrayList;
 
 
 public class UserRegistrationActivity extends ActionBarActivity {
     private EditText etName;
-    private EditText etTitle;
+    private EditText etAge;
     private EditText etEmail;
     private EditText etAddress;
-    private EditText etCity;
-    private EditText etCountry;
+    private EditText etBlood;
+    private EditText etMobile;
 
     private Button btnSave;
     private DBAdapter dbAdapter;
@@ -51,19 +53,19 @@ public class UserRegistrationActivity extends ActionBarActivity {
         for(User user : userArrayList){
             etName.setText(user.getName());
             etEmail.setText(user.getEmail());
-            etTitle.setText(user.getTitle());
+            etAge.setText(user.getAge());
             etAddress.setText(user.getAddress());
-            etCity.setText(user.getCity());
-            etCountry.setText(user.getCountry());
+            etBlood.setText(user.getBlood());
+            etMobile.setText(user.getMobile());
         }
     }
 
     private void initialization() {
         etAddress= (EditText) findViewById(R.id.etAddress);
         etName= (EditText) findViewById(R.id.etName);
-        etTitle= (EditText) findViewById(R.id.etAge);
-        etCity= (EditText) findViewById(R.id.etBlood);
-        etCountry= (EditText) findViewById(R.id.etMobile);
+        etAge = (EditText) findViewById(R.id.etAge);
+        etBlood = (EditText) findViewById(R.id.etBlood);
+        etMobile = (EditText) findViewById(R.id.etMobile);
         etEmail= (EditText) findViewById(R.id.etEmail);
 
         btnSave= (Button) findViewById(R.id.btnSave);
@@ -79,11 +81,11 @@ public class UserRegistrationActivity extends ActionBarActivity {
                         btnSave.getBackground().setAlpha(255);
                         // insert data to database ..........
                         String name=etName.getText().toString().trim();
-                        String title=etTitle.getText().toString().trim();
+                        String title= etAge.getText().toString().trim();
                         String email=etEmail.getText().toString().trim();
                         String address=etAddress.getText().toString().trim();
-                        String city=etCity.getText().toString().trim();
-                        String country=etCountry.getText().toString().trim();
+                        String city= etBlood.getText().toString().trim();
+                        String country= etMobile.getText().toString().trim();
                         if(name.isEmpty() || title.isEmpty() || email.isEmpty()
                                 || address.isEmpty() || city.isEmpty()|| country.isEmpty()){
                             AlertDialog.Builder alert=new AlertDialog.Builder(UserRegistrationActivity.this);

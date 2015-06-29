@@ -1,4 +1,4 @@
-package com.crackbrain.tanveen.icare;
+package com.crackbrain.tanveen.icare.profileimagedemo;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
@@ -11,9 +11,12 @@ import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.crackbrain.tanveen.icare.DBAdapter;
+import com.crackbrain.tanveen.icare.ListViewAdapter;
+import com.crackbrain.tanveen.icare.R;
+import com.crackbrain.tanveen.icare.User;
+import com.crackbrain.tanveen.icare.UserRegistrationActivity;
 import com.crackbrain.tanveen.icare.alarm.AlarmActivity;
-import com.crackbrain.tanveen.icare.alarm.BaseActivity;
-import com.crackbrain.tanveen.icare.alarm.*;
 
 import java.util.ArrayList;
 

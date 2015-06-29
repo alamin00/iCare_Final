@@ -40,10 +40,10 @@ public class UserDetailsActivity extends ActionBarActivity {
         for(User user : userArrayList){
             tvName.setText(user.getName());
             tvEmail.setText(user.getEmail());
-            tvAge.setText(user.getTitle());
+            tvAge.setText(user.getAge());
             tvAddress.setText(user.getAddress());
-            tvCity.setText(user.getCity());
-            tvPhone.setText(user.getCountry());
+            tvCity.setText(user.getBlood());
+            tvPhone.setText(user.getMobile());
         }
     }
 

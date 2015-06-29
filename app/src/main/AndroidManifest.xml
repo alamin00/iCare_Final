@@ -81,7 +81,7 @@
         </receiver>
 
         <activity
-            android:name=".AllUserList"
+            android:name=".profileimagedemo.AllUserList"
             android:label="@string/title_activity_all_user_list" >
         </activity>
 

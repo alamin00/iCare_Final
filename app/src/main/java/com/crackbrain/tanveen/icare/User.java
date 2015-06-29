@@ -42,7 +42,7 @@ public class User {
         return name;
     }
 
-    public String getTitle() {
+    public String getAge() {
         return title;
     }
 
@@ -54,11 +54,11 @@ public class User {
         return address;
     }
 
-    public String getCity() {
+    public String getBlood() {
         return city;
     }
 
-    public String getCountry() {
+    public String getMobile() {
         return country;
     }
 
