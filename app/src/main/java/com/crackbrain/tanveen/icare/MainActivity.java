@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import com.crackbrain.tanveen.icare.alarm.AlarmActivity;
+import com.crackbrain.tanveen.icare.profileimagedemo.DoctorActivity;
 
 
 public class MainActivity extends ActionBarActivity implements View.OnClickListener {
@@ -59,6 +60,11 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
             case R.id.imgbtnBmi:{
                 Intent i=new Intent(MainActivity.this,BMI.class);
                 Log.d(TAG,"Bmi Button Clicked");
+                startActivity(i);
+                break;
+            }
+            case R.id.imgbtnDoc:{
+                Intent i = new Intent(MainActivity.this,DoctorActivity.class);
                 startActivity(i);
                 break;
             }

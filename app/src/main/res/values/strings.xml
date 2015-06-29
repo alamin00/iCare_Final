@@ -44,4 +44,28 @@
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
     <string name="title_activity_all_user_list">AllUserList</string>
+    <string name="title_section0">Doctor</string>
+    <string name="title_section1">Prescription</string>
+    <string name="title_section2">Orders</string>
+    <string name="title_section3">Doctor Details</string>
+    <string name="title_section4">Prescription Details</string>
+    <string name="title_section5">Order Details</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_customer_name">Customer Name</string>
+    <string name="hint_customer_email">Customer Email</string>
+    <string name="hint_customer_phone">Customer Phone</string>
+    <string name="hint_customer_street_address">Street Address</string>
+    <string name="hint_customer_city">City</string>
+    <string name="hint_customer_state">State</string>
+    <string name="hint_customer_zip_code">Zip Code</string>
+    <string name="hint_customer_note">Note</string>
+    <string name="no_customer">You have not added any doctor yet</string>
 </resources>
