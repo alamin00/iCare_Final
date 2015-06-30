@@ -68,4 +68,5 @@
     <string name="hint_customer_zip_code">Zip Code</string>
     <string name="hint_customer_note">Note</string>
     <string name="no_customer">You have not added any doctor yet</string>
+    <string name="title_activity_doctor_cal">DoctorCal</string>
 </resources>

@@ -13,7 +13,6 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
@@ -57,7 +56,7 @@
         </activity>
         <activity android:name=".alarm.preferences.AlarmPreferencesActivity" >
         </activity>
-        <activity android:name=".profileimagedemo.DoctorActivity"></activity>
+        <activity android:name=".profileimagedemo.DoctorActivity" />
 
         <service
             android:name=".alarm.service.AlarmService"
@@ -84,8 +83,10 @@
             android:name=".profileimagedemo.AllUserList"
             android:label="@string/title_activity_all_user_list" >
         </activity>
-
-
+        <activity
+            android:name=".profileimagedemo.Model.DoctorCal"
+            android:label="@string/title_activity_doctor_cal" >
+        </activity>
     </application>
 
 </manifest>
