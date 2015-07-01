@@ -13,25 +13,27 @@ import android.widget.Button;
 import com.crackbrain.tanveen.icare.R;
 import com.crackbrain.tanveen.icare.profileimagedemo.DoctorActivity;
 import com.crackbrain.tanveen.icare.profileimagedemo.Helpers.Constants;
-import com.crackbrain.tanveen.icare.profileimagedemo.*;
 import com.crackbrain.tanveen.icare.profileimagedemo.Model.DoctorCal;
+import com.crackbrain.tanveen.icare.profileimagedemo.Model.EmailActivity;
+import com.crackbrain.tanveen.icare.profileimagedemo.Model.MsgActivity;
+import com.crackbrain.tanveen.icare.profileimagedemo.prescriction_work.prescription_List2;
 
 
 /**
  * A simple {@link android.support.v4.app.Fragment} subclass.
  */
-public class OrderListFragment extends Fragment {
+public class Contact_with_doctor extends Fragment {
 
 
 
 
 
-    public OrderListFragment() {
+    public Contact_with_doctor() {
         // Required empty public constructor
     }
 
-    public static OrderListFragment newInstance(int sectionNumber) {
-        OrderListFragment fragment = new OrderListFragment();
+    public static Contact_with_doctor newInstance(int sectionNumber) {
+        Contact_with_doctor fragment = new Contact_with_doctor();
         Bundle args = new Bundle();
         args.putInt(Constants.ARG_SECTION_NUMBER, sectionNumber);
         fragment.setArguments(args);
@@ -53,11 +55,45 @@ public class OrderListFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        View view = inflater.inflate(R.layout.fragment_order_list, container, false);
+        View view = inflater.inflate(R.layout.contact_with_doctor, container, false);
 
         final   Button btnCall = (Button)view.findViewById(R.id.btnDoctorCall);
 
-       btnCall.setOnClickListener(new View.OnClickListener() {
+        final  Button  btnMsg = (Button)view.findViewById(R.id.btnMsgSendDoctor);
+
+        final Button btnEmail = (Button)view.findViewById(R.id.btnEmailSendDoctor);
+
+        final  Button btnprescription = (Button)view.findViewById(R.id.btnprescription);
+
+
+        btnprescription.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(getActivity(),prescription_List2.class);
+                startActivity(in);
+            }
+        });
+
+        btnEmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(getActivity(),EmailActivity.class);
+                startActivity(in);
+            }
+        });
+
+
+        btnMsg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(getActivity(),MsgActivity.class);
+                startActivity(in);
+            }
+        });
+
+
+
+        btnCall.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
                Intent in = new Intent(getActivity(),DoctorCal.class);

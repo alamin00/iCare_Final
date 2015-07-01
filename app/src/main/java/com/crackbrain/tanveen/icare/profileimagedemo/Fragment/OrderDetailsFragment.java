@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 import com.crackbrain.tanveen.icare.R;
 import com.crackbrain.tanveen.icare.profileimagedemo.DoctorActivity;
 import com.crackbrain.tanveen.icare.profileimagedemo.Helpers.Constants;
-import com.crackbrain.tanveen.icare.profileimagedemo.*;
 
 
 /**

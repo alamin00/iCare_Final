@@ -6,28 +6,50 @@
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
+        android:background="@drawable/background"
+
         android:orientation="vertical"
         android:layout_width="fill_parent"
+        android:layout_gravity="center"
         android:layout_height="fill_parent"
         >
 
         <Button
+            android:layout_marginTop="150sp"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Call"
+            android:layout_gravity="center"
+            android:background="#F1AA03"
+
             android:id="@+id/btnDoctorCall" />
 
         <Button
             android:layout_width="200dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="Message"
+            android:layout_marginTop="15sp"
+            android:background="#F1AA03"
+
             android:id="@+id/btnMsgSendDoctor" />
 
         <Button
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Email"
+            android:layout_marginTop="15sp"
+            android:background="#F1AA03"
+            android:layout_gravity="center"
             android:id="@+id/btnEmailSendDoctor" />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Prescription ADD"
+            android:layout_marginTop="15sp"
+            android:background="#F1AA03"
+            android:layout_gravity="center"
+            android:id="@+id/btnprescription" />
 
 
     </LinearLayout>

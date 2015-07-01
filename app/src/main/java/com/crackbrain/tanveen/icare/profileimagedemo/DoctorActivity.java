@@ -10,12 +10,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.crackbrain.tanveen.icare.R;
+import com.crackbrain.tanveen.icare.profileimagedemo.Fragment.OrderDetailsFragment;
+import com.crackbrain.tanveen.icare.profileimagedemo.Fragment.Contact_with_doctor;
 import com.crackbrain.tanveen.icare.profileimagedemo.Fragment.NavigationDrawerFragment;
 import com.crackbrain.tanveen.icare.profileimagedemo.Fragment.DoctorDetailsFragment;
 import com.crackbrain.tanveen.icare.profileimagedemo.Fragment.DoctorListFragment;
-import com.crackbrain.tanveen.icare.profileimagedemo.Fragment.NavigationDrawerFragment;
-import com.crackbrain.tanveen.icare.profileimagedemo.Fragment.OrderDetailsFragment;
-import com.crackbrain.tanveen.icare.profileimagedemo.Fragment.OrderListFragment;
 import com.crackbrain.tanveen.icare.profileimagedemo.Fragment.ProductDetailsFragment;
 import com.crackbrain.tanveen.icare.profileimagedemo.Fragment.ProductListFragment;
 import com.crackbrain.tanveen.icare.profileimagedemo.Helpers.Enums;
@@ -60,7 +59,7 @@ public class DoctorActivity extends ActionBarActivity
                 mFragment = ProductListFragment.newInstance(1);
                 break;
             case 2:
-                mFragment = OrderListFragment.newInstance(2);
+                mFragment = Contact_with_doctor.newInstance(2);
                 break;
         }
         FragmentManager fragmentManager = getSupportFragmentManager();

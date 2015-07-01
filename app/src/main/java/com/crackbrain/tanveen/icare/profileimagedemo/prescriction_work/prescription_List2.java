@@ -151,7 +151,7 @@ public class prescription_List2 extends Activity {
                     Log.e("oput before conversion", imageInByte.toString());
                     // Inserting Contacts
                     Log.d("Insert: ", "Inserting ..");
-                    db.addContact(new Contact("Android", imageInByte));
+                    db.addContact(new Contact("prescription", imageInByte));
                     Intent i = new Intent(prescription_List2.this,
                             prescription_List2.class);
                     startActivity(i);

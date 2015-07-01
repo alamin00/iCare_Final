@@ -3,7 +3,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E0F2F1">
+    android:background="@drawable/background">
 
     <ImageView
         android:id="@+id/imvProfilePic"
@@ -32,8 +32,9 @@
             android:layout_gravity="center_vertical"
             android:layout_marginBottom="10dp"
             android:text="Name"
-            android:textColor="#ffffb911"
-            android:textSize="18sp"
+
+            android:textColor="#ffc416ff"
+            android:textSize="25sp"
             android:textStyle="bold" />
 
         <TextView
@@ -45,7 +46,7 @@
             android:layout_toRightOf="@+id/imvProfilePic"
             android:text="Email"
             android:textColor="#ffc416ff"
-            android:textSize="16sp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -97,7 +98,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:text="Age"
-                android:textSize="16sp"
+                android:textColor="#ffffff"
+
+                android:textSize="20sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -113,7 +116,7 @@
                 android:layout_weight="1"
                 android:text="Address: "
                 android:textColor="#000"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -122,7 +125,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:text="Address"
-                android:textSize="16sp"
+                android:textColor="#ffffff"
+
+                android:textSize="20sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -148,7 +153,9 @@
                 android:layout_weight="2"
                 android:layout_marginLeft="10dp"
                 android:text="Blood Group"
-                android:textSize="16sp"
+                android:textColor="#ffffff"
+
+                android:textSize="20sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -164,7 +171,7 @@
                 android:layout_weight="1"
                 android:text="Mobile No: "
                 android:textColor="#000"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -173,7 +180,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:text="Mobile number"
-                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
                 android:textStyle="bold" />
         </LinearLayout>
 

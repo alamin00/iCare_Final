@@ -285,6 +285,6 @@ public class NavigationDrawerFragment extends Fragment {
     private void addItemsToDataList() {
         dataList.add(new DrawerItem("Doctor", R.drawable.ic_action_social_group));
         dataList.add(new DrawerItem("Prescription", R.drawable.ic_action_image_photo_camera));
-        dataList.add(new DrawerItem("Orders", R.drawable.ic_action_action_shopping_cart));
+        dataList.add(new DrawerItem("Contact With Doctor", R.drawable.ic_action_action_shopping_cart));
     }
 }

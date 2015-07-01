@@ -1,72 +1,69 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/linearLayout1"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
     android:background="#0B1B2F"
 
-    android:orientation="vertical" >
+    tools:context=".MainActivity" >
 
-    <TextView
-        android:id="@+id/destinationLable"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="To : "
-        android:textColor="#ffffff"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F1AA03"
+        android:layout_margin="5dp"
+        android:padding="5dp" >
 
-    <EditText
-        android:id="@+id/destinationAddress"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#ffffff"
+        <EditText
+            android:id="@+id/editTextTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:hint="Email Address!"
 
-        android:inputType="textEmailAddress" >
+            android:inputType="textEmailAddress"
+            android:singleLine="true" />
 
-        <requestFocus />
+        <EditText
+            android:id="@+id/editTextSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextTo"
+            android:layout_margin="5dp"
+            android:hint="Subject"
+            android:singleLine="true" />
 
-    </EditText>
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/editTextSubject"
+            android:layout_margin="5dp"
+            android:gravity="top|left"
+            android:hint="type message here!"
+            android:inputType="textMultiLine" />
 
-    <TextView
-        android:id="@+id/subjectLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#ffffff"
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/editTextMessage"
+            android:layout_marginLeft="130sp"
+            android:layout_marginTop="100sp"
+            android:text="Send" />
 
-        android:text="Subject : "
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        <Button
+            android:id="@+id/buttonAttachment"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="attachment"
+            android:layout_below="@+id/editTextMessage"
+            android:layout_alignRight="@+id/editTextTo"
+            android:layout_alignEnd="@+id/editTextTo" />
+    </RelativeLayout>
 
-    <EditText
-        android:id="@+id/subject"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#ffffff"
-
-        >
-    </EditText>
-
-    <TextView
-        android:id="@+id/message_body_label"
-        android:layout_width="wrap_content"
-        android:textColor="#ffffff"
-
-        android:layout_height="wrap_content"
-        android:text="Message : "
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <EditText
-        android:id="@+id/messageBody"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="top"
-        android:textColor="#ffffff"
-
-        android:inputType="textMultiLine"
-        android:lines="5" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Send" />
-
-</LinearLayout>
+</ScrollView>

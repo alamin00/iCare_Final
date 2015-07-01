@@ -6,32 +6,32 @@ package com.crackbrain.tanveen.icare;
 public class User {
     private int id;
     private String name;
-    private String title;
+    private String age;
     private String email;
     private String address;
-    private String city;
-    private String country;
+    private String bloodGroup;
+    private String mobile;
 
     public User() {
     }
 
-    public User(int id, String name, String title, String email, String address, String city, String country) {
+    public User(int id, String name, String age, String email, String address, String bloodGroup, String mobile) {
         this.id = id;
         this.name = name;
-        this.title = title;
+        this.age = age;
         this.email = email;
         this.address = address;
-        this.city = city;
-        this.country = country;
+        this.bloodGroup = bloodGroup;
+        this.mobile = mobile;
     }
 
-    public User(String name, String title, String email, String address, String city, String country) {
+    public User(String name, String age, String email, String address, String bloodGroup, String mobile) {
         this.name = name;
-        this.title = title;
+        this.age = age;
         this.email = email;
         this.address = address;
-        this.city = city;
-        this.country = country;
+        this.bloodGroup = bloodGroup;
+        this.mobile = mobile;
     }
 
     public int getId() {
@@ -43,7 +43,7 @@ public class User {
     }
 
     public String getAge() {
-        return title;
+        return age;
     }
 
     public String getEmail() {
@@ -55,11 +55,11 @@ public class User {
     }
 
     public String getBlood() {
-        return city;
+        return bloodGroup;
     }
 
     public String getMobile() {
-        return country;
+        return mobile;
     }
 
     public void setId(int id) {
@@ -70,8 +70,8 @@ public class User {
         this.name = name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setAge(String age) {
+        this.age = age;
     }
 
     public void setEmail(String email) {
@@ -82,11 +82,11 @@ public class User {
         this.address = address;
     }
 
-    public void setCity(String city) {
-        this.city = city;
+    public void setBloodGroup(String bloodGroup) {
+        this.bloodGroup = bloodGroup;
     }
 
-    public void setCountry(String country) {
-        this.country = country;
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
     }
 }

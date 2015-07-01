@@ -46,7 +46,7 @@
     <string name="title_activity_all_user_list">AllUserList</string>
     <string name="title_section0">Doctor</string>
     <string name="title_section1">Prescription</string>
-    <string name="title_section2">Orders</string>
+    <string name="title_section2">Contact with Doctor</string>
     <string name="title_section3">Doctor Details</string>
     <string name="title_section4">Prescription Details</string>
     <string name="title_section5">Order Details</string>
@@ -69,4 +69,8 @@
     <string name="hint_customer_note">Note</string>
     <string name="no_customer">You have not added any doctor yet</string>
     <string name="title_activity_doctor_cal">DoctorCal</string>
+    <string name="title_activity_msg">MsgActivity</string>
+    <string name="title_activity_email">EmailActivity</string>
+    <string name="title_activity_prescription__list2">prescription_List2</string>
+    <string name="title_activity_show_prescription">showPrescription</string>
 </resources>
